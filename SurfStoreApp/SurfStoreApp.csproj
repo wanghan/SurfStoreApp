@@ -177,7 +177,9 @@
     <Content Include="Views\Surf\Contact.cshtml" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Web.config" />
     <None Include="Properties\PublishProfiles\SurfStoreApp.pubxml" />
+    <Content Include="Scripts\Web.config" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
