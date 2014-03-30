@@ -14,6 +14,7 @@ namespace SurfStoreApp.Controllers
             return View();
         }
 
+        [OutputCache(Duration = 3600, VaryByParam = "category", Location = OutputCacheLocation.Client)]
         public ActionResult Product(string category)
         {
             List<ProductModel> productModel = new List<ProductModel>();
