@@ -9,7 +9,6 @@
         <meta name="description" content="">
         <meta name="author" content="">
         @System.Web.Optimization.Styles.Render("~/styles/css")
-        @System.Web.Optimization.Scripts.Render("~/scripts/js")
         <style type="text/css">
             body
             {
@@ -79,5 +78,14 @@
       </footer>
     </div>
     <!--/.fluid-container-->
+    @System.Web.Optimization.Scripts.Render("~/scripts/js")
+    <script>
+        if (typeof window.Worker === "function") {
+            var worker = new Worker("/scripts/worker.js");
+            worker.onmessage = function (event) {
+                alert(event.data);
+            }
+        }
+    </script>
 </body>
 </html>
