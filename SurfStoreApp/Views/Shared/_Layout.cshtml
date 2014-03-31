@@ -1,26 +1,24 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <asp:ContentPlaceHolder runat="server" ID="HeadContent">
-        <meta charset="utf-8">
-        <title>Surf Store Application</title>
-        <link rel="shortcut icon" href="@Url.Content("~/Content/Images/favicon.ico")" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="">
-        <meta name="author" content="">
-        @System.Web.Optimization.Styles.Render("~/styles/css")
-        <style type="text/css">
-            body
-            {
-                padding-top: 60px;
-                padding-bottom: 40px;
-            }
-            .sidebar-nav
-            {
-                padding: 9px 0;
-            }
-        </style>
-    </asp:ContentPlaceHolder>
+    <meta charset="utf-8">
+    <title>Surf Store Application</title>
+    <link rel="shortcut icon" href="@Url.Content("~/Content/Images/favicon.ico")" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    @System.Web.Optimization.Styles.Render("~/styles/css")
+    <style type="text/css">
+        body
+        {
+            padding-top: 60px;
+            padding-bottom: 40px;
+        }
+        .sidebar-nav
+        {
+            padding: 9px 0;
+        }
+    </style>
 </head>
 <body>
     <div class="navbar navbar-fixed-top">
@@ -79,13 +77,13 @@
     </div>
     <!--/.fluid-container-->
     @System.Web.Optimization.Scripts.Render("~/scripts/js")
-    <script>
+    @*<script>
         if (typeof window.Worker === "function") {
             var worker = new Worker("/scripts/worker.js");
             worker.onmessage = function (event) {
                 alert(event.data);
             }
         }
-    </script>
+    </script>*@
 </body>
 </html>
