@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@using SurfStoreApp.Utils
+
+<!DOCTYPE html>
 <html lang="en">
 @*<html lang="en" manifest="/AppCache">*@
 <head>
@@ -26,7 +28,8 @@
             <div class="container-fluid">
                 <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                     <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-                </a><a class="brand" href="/">Surf Store Application</a>
+                </a>
+                <a class="brand" href="/">@Html.DrawImage(Url.Content("~/content/images/store-logo.png"), "Surf Store Application") Surf Store Application</a>
                 <div class="btn-group pull-right">
                     <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
                         <i class="icon-user">

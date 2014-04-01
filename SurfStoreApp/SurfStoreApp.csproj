@@ -125,6 +125,7 @@
     </Compile>
     <Compile Include="Models\ProductModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\DataUriUtils.cs" />
     <Compile Include="Utils\ImageUtils.cs" />
     <Compile Include="Utils\OfflineUtils.cs" />
   </ItemGroup>
@@ -149,6 +150,7 @@
     <Content Include="Content\Images\mens\Mens Shirts.jpg" />
     <Content Include="Content\Images\mens\Mens Wetsuits.jpg" />
     <Content Include="Content\Images\Skate-homepage.png" />
+    <Content Include="Content\Images\store-logo.png" />
     <Content Include="Content\Images\surfboard\Blank Surfboards.jpg" />
     <Content Include="Content\Images\surfboard\Kids Boards.png" />
     <Content Include="Content\Images\surfboard\Ladies Surfboards.png" />
